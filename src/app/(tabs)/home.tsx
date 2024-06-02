@@ -1,30 +1,21 @@
-import { Image, StyleSheet, View, Text } from 'react-native';
+import { View, Text } from 'react-native';
+
 import { Link } from 'expo-router';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default function HomeScreen() {
   return (
-    <View>
-      <Text>aoalsfla</Text>
-      <Link href="index">Voltar pra index</Link>
-    </View>
+    <LinearGradient
+      colors={['#d4e9ff', '#f3f7fc']}
+      start={[0, 0]}
+      end={[0, 0.7]}
+      className='flex-1 py-6 px-6'
+    >
+      <View>
+        <Text>aoalsfla</Text>
+        <Link href="/">Voltar pra index</Link>
+      </View>
+
+    </LinearGradient>
   );
 }
-
-const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
-  },
-});
