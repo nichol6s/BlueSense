@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import React from 'react';
 
 export default function TabLayout() {
@@ -18,16 +18,16 @@ export default function TabLayout() {
         options={{
           title: 'Home',
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'home' : 'home-outline'} color={color} />
+            <Ionicons name={focused ? 'home' : 'home-outline'} color={color} size={22} />
           ),
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="ocean"
         options={{
-          title: 'Explore',
+          title: 'Ocean',
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <MaterialCommunityIcons name={focused ? 'waves-arrow-up' : 'waves'} color={color} size={22} />
           ),
         }}
       />

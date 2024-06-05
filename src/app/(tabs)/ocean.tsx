@@ -12,7 +12,7 @@ export default function Explore() {
             className='flex-1 py-6 px-6'
         >
             <View>
-                <Text>explore</Text>
+                <Text>Ocean</Text>
             </View>
         </LinearGradient>
 
