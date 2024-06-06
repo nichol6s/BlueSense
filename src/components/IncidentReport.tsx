@@ -6,7 +6,7 @@ import { FontAwesome, FontAwesome5, FontAwesome6, Feather, MaterialIcons } from 
 
 export default function IncidentReport() {
     return (
-        <View className='flex-1 w-full h-[120] bg-[#d4e9ff] rounded-lg mt-6 p-4 gap-1'>
+        <View className='flex-1 w-full h-[120] bg-blue-100 rounded-lg mt-6 p-4 gap-1'>
             <Text className='text-lg'>Sujeira forte e poluente dentro da rota</Text>
 
             <View className='flex-row items-center gap-1 mt-2'>

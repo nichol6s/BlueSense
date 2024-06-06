@@ -23,12 +23,12 @@ export default function HomeScreen() {
         <Text className='text-black font-semibold text-[28px] mt-6'>Cadastre um chamado</Text>
 
         <Input>
-          <FontAwesome6 name="location-dot" color="black" size={12} />
+          <FontAwesome6 name="location-dot" color="gray" size={12} />
           <Input.Field placeholder="Rota náutica" />
         </Input>
 
         <Input>
-          <MaterialIcons name="description" color="black" size={12} />
+          <MaterialIcons name="description" color="gray" size={12} />
           <Input.Field
             placeholder="Pequena descrição"
             maxLength={40}
@@ -39,7 +39,7 @@ export default function HomeScreen() {
         </Input>
 
         <Input>
-          <FontAwesome5 name="ship" color="black" size={12} />
+          <FontAwesome5 name="ship" color="gray" size={12} />
           <Input.Field placeholder="ID do Navio" />
         </Input>
 
