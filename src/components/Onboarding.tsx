@@ -30,7 +30,7 @@ export default function Onboarding() {
     };
 
     return (
-        <View className='flex-1 items-center'>
+        <View className='mt-16 items-center'>
             <FlatList
                 data={slides}
                 renderItem={({ item }) => <OnboardingItem item={item} />}
@@ -46,17 +46,21 @@ export default function Onboarding() {
                 ref={slidesRef}
             />
 
+            <View className='mt-16'>
+                <Paginator data={slides} scrollX={scrollX} />
+            </View>
 
-            <Paginator data={slides} scrollX={scrollX} />
+            <View className='mt-20 items-center gap-4'>
+                <Button
+                    title={currentIndex === slides.length - 1 ? 'Começar agora' : 'Próximo'}
+                    onPress={scrollTo}
+                />
 
-            <Button
-                title={currentIndex === slides.length - 1 ? 'Começar agora' : 'Próximo'}
-                onPress={scrollTo}
-            />
+                <Pressable className='active:opacity-70' onPress={() => router.push("/home")}>
+                    <Text className='text-gray-400 text-base font-medium'>Pular</Text>
+                </Pressable>
+            </View>
 
-            <Pressable className='active:opacity-70' onPress={() => router.push("/home")}>
-                <Text className='text-gray-400 text-base font-medium'>Pular</Text>
-            </Pressable>
 
         </View>
     )
