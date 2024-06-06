@@ -46,11 +46,11 @@ export default function Onboarding() {
                 ref={slidesRef}
             />
 
-            <View className='mt-16'>
+            <View className='mt-12'>
                 <Paginator data={slides} scrollX={scrollX} />
             </View>
 
-            <View className='mt-20 items-center gap-4'>
+            <View className='mt-12 items-center gap-4'>
                 <Button
                     title={currentIndex === slides.length - 1 ? 'Começar agora' : 'Próximo'}
                     onPress={scrollTo}
