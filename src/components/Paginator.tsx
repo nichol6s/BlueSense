@@ -10,7 +10,7 @@ export default function Paginator({ data, scrollX }: PaginatorProps) {
     const { width } = useWindowDimensions()
 
     return (
-        <View className='mt-10 justify-center flex-row h-16'>
+        <View className='justify-center flex-row'>
             {data.map((_, index) => {
                 const inputRange = [(index - 1) * width, index * width, (index + 1) * width]
 
