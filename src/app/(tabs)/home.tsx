@@ -40,7 +40,7 @@ export default function HomeScreen() {
 
         <Input>
           <FontAwesome5 name="ship" color="gray" size={12} />
-          <Input.Field placeholder="ID do Navio" />
+          <Input.Field placeholder="IMO do Navio" keyboardType='numeric'/>
         </Input>
 
         <Button title="Adicionar" />
@@ -51,7 +51,12 @@ export default function HomeScreen() {
       </View>
 
       <ScrollView>
-        <IncidentReport />
+        <IncidentReport 
+          description="Navio encalhado"
+          routeName="Rota do Pacífico"
+          shipIMO={1234567}
+          status="Em andamento"
+        />
       </ScrollView>
 
     </LinearGradient>
