@@ -9,7 +9,7 @@ interface FieldProps extends TextInputProps {
 
 function Input({ children }: { children: React.ReactNode }) {
     return (
-        <View className='w-full h-[50] flex-row items-center gap-3 px-6 border border-[#0050dc] rounded-[16]'>
+        <View className='w-full h-[50] flex-row items-center gap-3 px-6 border border-blue-200 rounded-[16]'>
             {children}
         </View>
     )
