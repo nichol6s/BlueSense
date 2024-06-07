@@ -1,26 +1,38 @@
-import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
+import 'react-native-reanimated';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
-import 'react-native-reanimated';
+import { useFonts } from 'expo-font';
+
+import {
+  PlusJakartaSans_500Medium,
+  PlusJakartaSans_600SemiBold
+} from "@expo-google-fonts/plus-jakarta-sans"
+
+import {
+  Montserrat_300Light,
+  Montserrat_400Regular
+} from "@expo-google-fonts/montserrat"
 
 import "../styles/global.css"
 
-// Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const [loaded] = useFonts({
-    SpaceMono: require('../../assets/fonts/SpaceMono-Regular.ttf'),
+  const [fontsLoaded] = useFonts({
+    PlusJakartaSans_500Medium,
+    PlusJakartaSans_600SemiBold,
+    Montserrat_300Light,
+    Montserrat_400Regular
   });
 
   useEffect(() => {
-    if (loaded) {
+    if (fontsLoaded) {
       SplashScreen.hideAsync();
     }
-  }, [loaded]);
+  }, [fontsLoaded]);
 
-  if (!loaded) {
+  if (!fontsLoaded) {
     return null;
   }
 
