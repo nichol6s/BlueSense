@@ -15,7 +15,6 @@ export default function Index() {
         >
             <StatusBar style='dark' />
             <Onboarding />
-
         </LinearGradient>
 
     )
