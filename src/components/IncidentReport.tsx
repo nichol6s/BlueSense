@@ -1,4 +1,4 @@
-import { View, Text, Pressable } from 'react-native';
+import { View, Text, Pressable, Alert } from 'react-native';
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { FontAwesome, FontAwesome5, FontAwesome6, Feather, MaterialIcons } from '@expo/vector-icons';
@@ -25,7 +25,8 @@ export default function IncidentReport({ description, routeName, shipIMO, status
             await updateDoc(incidentRef, { status: newStatus });
             setCurrentStatus(newStatus);
         } catch (e) {
-            console.error("Error updating document: ", e);
+            Alert.alert("Chamado", "Erro ao atualizar chamado")
+            console.error("Erro ao atualizar: ", e);
         }
     }
 
@@ -34,15 +35,10 @@ export default function IncidentReport({ description, routeName, shipIMO, status
             await deleteDoc(doc(db, "incidents", id));
             setIncidents(incidents.filter(incident => incident.id !== id));
         } catch (e) {
-            console.error("Error deleting document: ", e);
+            Alert.alert("Chamado", "Erro ao deletar chamado")
+            console.error("Erro ao deletar: ", e);
         }
     }
-
-    // useEffect(() => {
-    //     if (currentStatus) {
-    //         updateStatus()
-    //     }
-    // }, [setCurrentStatus])
 
     return (
         <View className='flex-1 w-full h-[120] bg-blue-100 rounded-lg mt-6 p-4 gap-1'>

@@ -40,7 +40,7 @@ export default function HomeScreen() {
         Keyboard.dismiss();
         getIncident();
       } catch (e) {
-        Alert.alert("Chamado", "Error adding document: ");
+        Alert.alert("Chamado", "Erro ao cadastrar chamado: ");
         console.log(e)
       }
     } else {
