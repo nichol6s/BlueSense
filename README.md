@@ -11,108 +11,104 @@
 </p>
 
 <p align="center">
-  <a href="#about">Sobre</a> • 
-  <a href="#started">Começando</a> • 
-  <a href="#colab">Colaboradores</a>
+  <a href="#about">About</a> • 
+  <a href="#started">Getting Started</a> • 
+  <a href="#colab">Contributors</a>
 </p>
 
-<h2 id="about">📌 Sobre</h2>
+<h2 id="about">📌 About</h2>
 
-Seja bem-vindo ao BlueSense, um app focado na conscientização da vida marinha.
+Welcome to BlueSense, an app focused on raising awareness of marine life.
 
-<h2 id="started">🚀 Começando</h2>
+<h2 id="started">🚀 Getting Started</h2>
 
-<h3>Pré-requisitos</h3>
+<h3>Prerequisites</h3>
 
 ![node](https://img.shields.io/badge/NODE.JS-black?style=for-the-badge&logo=nodedotjs&logoColor=green)
 
-![android studio](https://img.shields.io/badge/ANDROID%20STUDIO-black?style=for-the-badge&logo=android-studio&logoColor=white) OU ![expo go](https://img.shields.io/badge/Expo%20Go-black?style=for-the-badge&logo=expo&logoColor=white)
+![android studio](https://img.shields.io/badge/ANDROID%20STUDIO-black?style=for-the-badge&logo=android-studio&logoColor=white) OR ![expo go](https://img.shields.io/badge/Expo%20Go-black?style=for-the-badge&logo=expo&logoColor=white)
 
+<h3>Running</h3>
 
-<h3>Rodando</h3>
-
-Como rodar o projeto:
+How to run the project:
 
 ```bash
-#Primeiro vamos clonar ele
+#First let's clone it
 git clone https://github.com/nichol6s/bluesense-app.git
 
-#Entrando na pasta
+#Entering the folder
 cd bluesense-app
 
-#Instale as dependências:
+#Install the dependencies:
 npm install
 
-#Rode o projeto expo:
+#Run the expo project:
 npx expo start
 ```
 
-<h3>Abrindo</h3>
+<h3>Opening</h3>
 
-Temos duas formas de abrir o projeto:
-- Android Studio
+We have two ways to open the project:
 
-  ```bash
-  #Depois de rodar o comando: npx expo start
-  #Pressione a letra "A" no terminal e ele irá abrir o projeto no emulador do android studio
-  ```
-- Expo Go 
-  ```bash
-  #Instale o app "Expo Go" no seu celular
-  #Escaneie o QRCode que aparece no terminal
-  ```
-<h1 id="colab">🤝 Colaboradores</h2>
-<table>
-  <tr>
-    <td align="center">
-      <p>Mobile & IA</p>
-      <a href="https://github.com/nichol6s">
-        <img src="https://avatars.githubusercontent.com/u/105325313?v=4" width="115px;" alt="Foto do Nicholas no GitHub"/><br>
-        <sub>
-          <strong>Nicholas Santos</strong>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <p>C#</p>
-      <a href="https://github.com/VitorKubica">
-        <img src="https://avatars.githubusercontent.com/u/107961081?v=4" width="115px;" alt="Foto do Vitor no GitHub"/><br>
-        <sub>
-          <strong>Vitor Kubica</strong>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <p>Database & Compliance</p>
-      <a href="https://github.com/DuduViolante">
-        <img src="https://avatars.githubusercontent.com/u/126472870?v=4" width="115px;" alt="Foto do Violante no GitHub"/><br>
-        <sub>
-          <strong>Eduardo Violante</strong>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <p>Java</p>
-      <a href="https://github.com/pedrocpacheco">
-        <img src="https://avatars.githubusercontent.com/u/112909829?v=4" width="115px;" alt="Foto do Pedro no github"/><br>
-        <sub>
-          <strong>Pedro</strong>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-        <p>DevOps</p>
-        <a href="https://github.com/biasvestka">
-        <img src="https://avatars.githubusercontent.com/u/126726456?v=4" width="115px;" alt="Foto da Beatriz GitHub"/><br>
-        <sub>
-            <strong>Beatriz Svestka</strong>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
+-   Android Studio
 
-Join our community of developers creating universal apps.
+    ```bash
+    #After running the command: npx expo start
+    #Press the letter "A" in the terminal and it will open the project in the android studio emulator
+    ```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+-   Expo Go
+    ```bash
+    #Install the "Expo Go" app on your phone
+    #Scan the QRCode that appears in the terminal
+    ```
+    <h1 id="colab">🤝 Contributors</h1>
+    <table>
+      <tr>
+        <td align="center">
+          <p>Mobile & AI</p>
+          <a href="https://github.com/nichol6s">
+            <img src="https://avatars.githubusercontent.com/u/105325313?v=4" width="115px;" alt="Nicholas's photo on GitHub"/><br>
+            <sub>
+              <strong>Nicholas Santos</strong>
+            </sub>
+          </a>
+        </td>
+        <td align="center">
+          <p>C#</p>
+          <a href="https://github.com/VitorKubica">
+            <img src="https://avatars.githubusercontent.com/u/107961081?v=4" width="115px;" alt="Vitor's photo on GitHub"/><br>
+            <sub>
+              <strong>Vitor Kubica</strong>
+            </sub>
+          </a>
+        </td>
+        <td align="center">
+          <p>Database & Compliance</p>
+          <a href="https://github.com/DuduViolante">
+            <img src="https://avatars.githubusercontent.com/u/126472870?v=4" width="115px;" alt="Violante's photo on GitHub"/><br>
+            <sub>
+              <strong>Eduardo Violante</strong>
+            </sub>
+          </a>
+        </td>
+        <td align="center">
+          <p>Java</p>
+          <a href="https://github.com/pedrocpacheco">
+            <img src="https://avatars.githubusercontent.com/u/112909829?v=4" width="115px;" alt="Pedro's photo on github"/><br>
+            <sub>
+              <strong>Pedro</strong>
+            </sub>
+          </a>
+        </td>
+        <td align="center">
+            <p>DevOps</p>
+            <a href="https://github.com/biasvestka">
+            <img src="https://avatars.githubusercontent.com/u/126726456?v=4" width="115px;" alt="Beatriz's photo on GitHub"/><br>
+            <sub>
+                <strong>Beatriz Svestka</strong>
+            </sub>
+          </a>
+        </td>
+      </tr>
+    </table>
